@@ -1,0 +1,209 @@
+{
+	"name": "Maalik the Chained One",
+	"source": "RealmsCollide",
+	"size": "L",
+	"type": {
+		"type": "construct",
+		"tags": [
+			"undead"
+		]
+	},
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 20,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "10d8 + 50",
+		"average": 95
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 22,
+	"dex": 15,
+	"con": 20,
+	"int": 11,
+	"wis": 12,
+	"cha": 14,
+	"save": {
+		"con": "+8",
+		"wis": "+4",
+		"cha": "+5"
+	},
+	"senses": [
+		"darkvision 120 ft."
+	],
+	"passive": 8,
+	"resist": [
+		"cold",
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks that aren't adamantine"
+		}
+	],
+	"immune": [
+		"fire",
+		"poison",
+		"psychic"
+	],
+	"conditionImmune": [
+		"blinded",
+		"charmed",
+		"deafened",
+		"exhaustion",
+		"frightened",
+		"paralyzed",
+		"petrified",
+		"poisoned"
+	],
+	"languages": [
+		"Giant",
+		"Common",
+		"telepathy 120 ft."
+	],
+	"cr": "8",
+	"trait": [
+		{
+			"name": "Devil's Sight",
+			"entries": [
+				"Magical darkness doesn't impede the chained one's darkvision."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The chained one has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Heated Body",
+			"entries": [
+				"A creature that touches the chained one or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) fire damage."
+			]
+		},
+		{
+			"name": "Heated Weapons",
+			"entries": [
+				"Any metal melee weapon the chained one wields deals an extra 3 ({@damage 1d6}) fire damage on a hit (included in the attack)."
+			]
+		},
+		{
+			"name": "Liquefied Movement",
+			"entries": [
+				"On its turn, the chained one can move through a space as narrow as 1 inch without squeezing. If it ends its turn in a space that isn't large enough for it, it is pushed to the nearest unoccupied space that is large enough for it, and it takes 3 ({1d6}) bludgeoning damage for every 5 feet it was pushed."
+			]
+		},
+		{
+			"name": "Magic Weapons",
+			"entries": [
+				"The chained one's weapon attacks are magical."
+			]
+		},
+		{
+			"name": "Grounded",
+			"entries": [
+				"While on the ground, the monster has advantage on saving throws against effects that would push, pull, or knock it {@condition prone}."
+			]
+		},
+		{
+			"name": "Siege Monster",
+			"entries": [
+				"The chained one deals double damage to objects and structures."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The chained one makes two attacks with its chains."
+			]
+		},
+		{
+			"name": "Chain",
+			"entries": [
+				"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}27 ({@damage 6d6 + 6}) slashing damage and 3 ({@damage 1d6}) fire damage. The target is {@condition grappled} (escape {@dc 14}) if the devil isn't already grappling a creature. Until this grapple ends, the target is {@condition restrained} and takes 21 ({@damage 6d6}) piercing damage and 3 ({@damage 1d6}) fire damage at the start of each of its turns."
+			]
+		},
+		{
+			"name": "Animate Chains (Recharges after a Short or Long Rest)",
+			"entries": [
+				"Up to four chains the chained one can see within 60 feet of it magically sprout razor-edged barbs and animate under the chained one's control, provided that the chains aren't being worn or carried.",
+				"Each animated chain is an object with AC 20, 20 hit points, resistance to piercing damage, and immunity to psychic and thunder damage. When the devil uses Multiattack on its turn, it can use each animated chain to make one additional chain attack. An animated chain can grapple one creature of its own but can't make attacks while grappling. An animated chain reverts to its inanimate state if reduced to 0 hit points or if the devil is {@condition incapacitated} or dies."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Unnerving Mask",
+			"entries": [
+				"When a creature the chained one can see starts its turn within 30 feet of the chained one, the chained one can create the illusion that it looks like one of the creature's departed loved ones or bitter enemies. If the creature can see the chained one, it must succeed on a {@dc 14} Wisdom saving throw or be {@condition frightened} until the end of its turn."
+			]
+		}
+	],
+	"soundClip": {
+		"type": "external",
+		"url": "https://5e.tools/audio/bestiary/chain-devil.mp3?v=1.132.3"
+	},
+	"traitTags": [
+		"Devil's Sight",
+		"Magic Resistance",
+		"Magic Weapons",
+		"Siege Monster"
+	],
+	"senseTags": [
+		"SD"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"GI",
+		"C",
+		"TP"
+	],
+	"damageTags": [
+		"S",
+		"F",
+		"P"
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	],
+	"conditionInflict": [
+		"grappled",
+		"restrained",
+		"frightened"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"tokenUrl": "https://5e.tools/img/MM/Chain Devil.png?v=1.132.3",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://5e.tools/img/bestiary/MM/Chain Devil.jpg"
+				}
+			}
+		]
+	},
+	"environment": [
+		"urban"
+	],
+	"shortName": "Chained One"
+}
